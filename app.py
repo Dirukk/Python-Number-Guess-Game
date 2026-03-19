@@ -32,7 +32,6 @@ def main():
     def new():
         global randomNumber, guesspcsnumber
         randomNumber = random.randint(1, 100)
-        print(randomNumber)
 
         guesspcsnumber = 0
         guessPcs.config(text="Guess Number: 0")
