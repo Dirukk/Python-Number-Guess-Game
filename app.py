@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import messagebox
 import random
+import subprocess
 
 # window configuration
 window = tk.Tk()
@@ -32,6 +33,7 @@ def main():
     def new():
         global randomNumber, guesspcsnumber
         randomNumber = random.randint(1, 100)
+        subprocess.call("cls", shell=True)
 
         guesspcsnumber = 0
         guessPcs.config(text="Guess Number: 0")
