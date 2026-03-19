@@ -39,6 +39,9 @@ def main():
         result.config(text="PLAYING...", fg="black", font=("Arial", 11))
         hint.config(text="")
 
+    def show():
+        print(randomNumber)
+
     def guess():
         def go():
             global guesspcsnumber
@@ -69,6 +72,9 @@ def main():
 
         newbtn = tk.Button(window, text="New Game", command=new)
         newbtn.pack(pady=10)
+
+        showbtn = tk.Button(window, text="SHOW ANSWER", fg="red", command=show)
+        showbtn.pack(pady=10)
 
     new()
     guess()
